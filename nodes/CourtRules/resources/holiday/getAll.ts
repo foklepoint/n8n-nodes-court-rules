@@ -17,15 +17,15 @@ export const holidayGetManyDescription: INodeProperties[] = [
 			minValue: 1,
 			maxValue: 500,
 		},
-		default: 100,
+		default: 50,
 		routing: {
 			send: {
 				type: 'query',
 				property: 'limit',
 			},
 		},
-		description:
-			'Max number of results to return. The API returns at most 500 holidays per request.',
+		description: 'Max number of results to return',
+		hint: 'The API returns at most 500 holidays per request',
 	},
 	{
 		displayName: 'Filters',
