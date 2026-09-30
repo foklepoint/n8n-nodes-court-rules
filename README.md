@@ -9,7 +9,7 @@ Every rule the API returns carries the URL of the court document it came from, s
 ## Status
 
 - This package is prepared but not published to npm yet. Publishing is waiting on an npm account. Until then, install it from a local build (see [Development](#development)).
-- The node compiles against the `n8n-workflow` types with `tsc --strict`, and `npm run verify` checks its request definitions offline against the Court Rules OpenAPI spec.
+- The node compiles against the `n8n-workflow` types with `tsc --strict`. GitHub Actions runs `n8n-node lint`, `n8n-node build` and `npm run verify` on every push; `npm run verify` checks the request definitions offline against the Court Rules OpenAPI spec.
 - It has not been run inside an n8n instance, and it has not been tested with a real API key.
 
 ## Installation
